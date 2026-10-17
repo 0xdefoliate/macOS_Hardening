@@ -24,7 +24,7 @@ Ideal for users who value **privacy**, **security**, and **performance**.
 </br>
 
 ## 🖥️ Device Recommendations
-- Mac with **Apple Silicon** Chip ([M1](https://en.wikipedia.org/wiki/Apple_M1) or newer) because of it's secure [ARM architecture](https://en.wikipedia.org/wiki/ARM_architecture_family).
+- Mac with **Apple Silicon** Chip ([M1](https://en.wikipedia.org/wiki/Apple_M1) or newer) because of its secure [ARM architecture](https://en.wikipedia.org/wiki/ARM_architecture_family).
 - Newer **chips**, starting with M2 have better [security features](https://help.apple.com/pdf/security/en_US/apple-platform-security-guide.pdf) like [Secure Page Table Monitor (SPTM) & Trusted Execution Monitor (TXM)](https://support.apple.com/guide/security/sec8b776536b/1/web/1#secd022396fb).
 - M4 adds the [Secure Exclave](https://discussions.apple.com/thread/255753688).
 - M5 significantly enhances security even further with [Memory Integrity Enforcement](https://support.apple.com/guide/security/sec8b776536b/1/web/1#sece53178c8f).
@@ -90,20 +90,20 @@ Ideal for users who value **privacy**, **security**, and **performance**.
   -  If not possible, at least [Electron-based](https://www.electronjs.org/apps) **programs** [should](https://wojciechregula.blog/post/abusing-electron-apps-to-bypass-macos-security-controls/) [_be_](https://medium.com/@metnew/why-electron-apps-cant-store-your-secrets-confidentially-inspect-option-a49950d6d51f) [avoided](https://blog.xpnsec.com/macos-injection-via-third-party-frameworks/) - even in [2024](https://wojciechregula.blog/post/electroniz3r/). 
 - [Avoid](https://sector7.computest.nl/post/2024-04-bringing-process-injection-into-view-exploiting-all-macos-apps-using-nib-files/) using **Homebrew** and remove [unmaintained](https://blog.kandji.io/twitch-privileged-helper) programs.
 - Avoid [Kernel extensions](https://support.apple.com/guide/deployment/depa5fb8376f/1/web/1.0) (Catalina and earlier), [System extensions](https://support.apple.com/HT210999) (Big Sur and later) **and** [Rosetta](https://support.apple.com/guide/security/secebb113be1/web).
-- Also VM software like Parallels **aren't perfect** in [2024](https://khronokernel.com/macos/2024/05/30/CVE-2024-34331.html) nor [2025](https://jhftss.github.io/Parallels-0-day/).
+- Also, remember that VM software like Parallels **aren't perfect** in [2024](https://khronokernel.com/macos/2024/05/30/CVE-2024-34331.html) nor [2025](https://jhftss.github.io/Parallels-0-day/).
 
 </br>
 
 ## 📋 General Tips
 
 -   Regularly audit installed **apps and permissions**.
--   Where [PassKeys](https://support.apple.com/HT213305) isn't supported, use strong, unique passwords and enable  **2FA** everywhere. This is easily **manageable** with internal [Passwords program](https://support.apple.com/guide/passwords/mchl901b1b95/mac).
+-   Where [passkeys](https://support.apple.com/HT213305) aren't supported, use strong, unique passwords and enable **2FA** everywhere. This is easily **manageable** with the internal [Passwords app](https://support.apple.com/guide/passwords/mchl901b1b95/mac).
 -   Periodically review  **Privacy Settings**.
-- With **Activity Monitor** you can find Apps lacking the Sandbox and/ or Code injection Protection.
+- With **Activity Monitor** you can find apps lacking the sandbox and/or code injection Protection.
   - Just [enable](https://developer.apple.com/documentation/security/app_sandbox/protecting_user_data_with_app_sandbox#4098972) the "Sandbox" and "Restricted" **columns**.
  - With the [Terminal](https://github.com/beerisgood/macOS_Hardening/blob/main/Hardened%20Runtime%20Check), you can also **check** the [Hardened Runtime](https://developer.apple.com/documentation/security/hardened_runtime).
 - Thunderbolt 4 cables enforce **DMA protection** [using](https://www.intel.com/content/www/us/en/content-details/753497/security-brief-thunderbolt-4.html) Directed I/O (Intel VT-d) technology that provides IO virtualization (**often referred** to as IO Memory Management Unit or IOMMU).
-- If Bluetooth accessories like a keyboard or mouse are used, **stay** with official Apple ones as their firmware will automatically be updated by macOS, and Apple's SoCs focus on **minimizing attack surface** by relegating security functions to dedicated hardware with limited functionality.
+- If Bluetooth accessories like a keyboard or mouse are used, **stay** with official Apple ones as their firmware will automatically be updated by macOS, and Apple's SoCs focus on **minimizing attack surface** by delegating security functions to dedicated hardware with limited functionality.
 
 </br>
 
